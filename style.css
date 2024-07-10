@@ -401,7 +401,6 @@ section {
 
 .project-info p {
     font-size: 1em; /* Adjust description font size as needed */
-    margin: 0 0 10px 0; /* Spacing below the project description */
 }
 
 .view-project-link {
@@ -409,7 +408,6 @@ section {
     text-decoration: none; /* No underline by default */
     font-weight: bold; /* Make the link bold */
     transition: color 0.3s; /* Smooth transition for color change */
-    margin-top: auto;
 }
 
 .view-project-link:hover {
@@ -424,5 +422,28 @@ section {
 .google-logo-blue { color: #4285F4; }   /* Blue */
 
 .highlightt {
-    color: #ff8800; /* Example color - replace with your choice */
+    color: #ff8800; 
+}
+
+.highlighttt {
+    color: #a600ff; 
+}
+
+.site-footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Padding above and below the text */
+    position: relative; /* You can change to 'absolute' if you want it always at the bottom */
+    bottom: 0; /* Aligns to the bottom */
+    width: 100%; /* Ensures it stretches across the screen */
+}
+
+.footer-content {
+    display: inline-block; /* Keeps content in line */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.footer-content span {
+    font-weight: bold; /* Makes the name or company name bold */
 }
