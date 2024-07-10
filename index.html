@@ -2,11 +2,198 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Keerthi Raghavendra</title>
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
+    <header>
+        <img src="logo.png" alt="Logo" id="logo">
+        <div id="accessibility-menu">
+            <button id="accessibility-btn" class="button-50" role="button">Accessibility Controls</button>
+            <div id="accessibility-controls" class="accessibility-controls hidden">
+                <button id="increase-font">Increase Font Size</button>
+                <button id="decrease-font">Decrease Font Size</button>
+                <button id="reset-font">Reset Font Size</button>
+                <button id="theme-toggle">Toggle Dark Mode</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="introduction">
+            <div class="left">
+              <div id="about-me">
+                <h1>Hi, my name is Keerthi.</h1>
+              </div>
+              <p>I love <span class="highlight">People</span>.</p>
+              <p>I love <span class="highlight">Problems</span>.</p>
+              <p>I love solving people's <br> problems using <span class="highlight">Technology</span>.</p>
+              <br>
+              <div class="contact-links">
+                <a href="https://www.linkedin.com/in/keerthi2020raghavendra/" target="_blank" class="contact-link contact-linkedin">
+                  <img src="linkedin-icon.png" alt="LinkedIn">
+                </a>
+                <a href="mailto:kraghave@andrew.cmu.edu" class="contact-link contact-email">
+                  <img src="email-icon.png" alt="Email">
+                </a>
+              </div>
+              <button class="resume-button">Resume</button>
+            </div>
+            <div class="right">
+                <img src="keerthi.png" alt="Keerthi" class="profile-image" loading="lazy">
+              </div>
+          </section>
+
+          <section id="about-me-section">
+            <div class="black-strip">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-me-content">
+                <p>
+                I am a Master of Science student at the <a href="https://www.cmu.edu/iii/index.html" target="_blank" class="special-link"><b>Integrated Innovation Institute, Carnegie Mellon University</b></a>, with a Bachelor's degree in Computer Science and Engineering from <a href="https://cs.pes.edu/" target="_blank" class="special-link"><b>PES University</b></a>.
+                </p>
+                <br>
+                <p>
+                I recently completed a year-long co-op with <a href="https://www.cisco.com/" target="_blank" class="special-link"><b>Cisco</b></a> under the <a href="https://launchpad.cisco.com/" target="_blank" class="special-link"><b>Cisco for Startups</b></a> team as a Business Strategy and Data Associate, with a focus on co-innovation with climate tech startups. I have also worked with <a href="https://opsverse.io/" target="_blank" class="special-link"><b>OpsVerse</b></a>, a DevOps startup, as a Research and Technical Intern on enhancing workflow automation, optimizing lead capture mechanisms, and shaping product strategy. I also advocate for underrepresented groups through my <b>Research</b> and <b>Service</b>.
+                </p>
+                <br>
+                <p>
+                I am passionate about <a href="https://online.hbs.edu/blog/post/what-is-the-triple-bottom-line" target="_blank" class="special-link"><b>Triple Bottom Line Sustainability</b></a> and developing innovative yet socially conscious products. My experiences so far have instilled a technology-centric mindset in me: How can I design inherently intuitive technology? How can I strategically position technology in the market? How can I implement sustainable technology? 
+                </p>
+                <br>
+                <p>
+                However, I now find myself urged to flip the perspective and explore how both society at large and the natural environment can influence technology. I want to understand how these dimensions can guide the creation of more responsible innovation.
+                </p>
+        </div>
+    </section>
+
+        <section id="projects">
+            <div class="black-strip">
+                <h2>Projects</h2>
+            </div>
+        <div class="projects-content">
+            <div class="project-item">
+                <div class="project-info">
+                    <h3 class="project-title">
+                        <span class="google-logo-blue">G</span><span class="google-logo-red">o</span><span class="google-logo-yellow">o</span><span class="google-logo-blue">g</span><span class="google-logo-green">l</span><span class="google-logo-red">e</span> Pay Redesign
+                    </h3>
+                    <div class="project-tags">
+                        <span class="tag">Hackathon</span>
+                        <span class="tag">HCI</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
+                    <p>Curious to know how a simple interaction inspired a complete redesign of Google Pay? From inspiration to prototype and everything in between.</p>
+                    <a href="https://drive.google.com/file/d/1xkXPiqs5zH3lNam2iqB-mpAy9w17ozWO/view?usp=sharing" target="_blank" class="view-project-link">View Project →</a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-info">
+                    <h3 class="project-title">
+                        Adaptive UI/UX for <span class="highlightt">Smart Geriatric</span> Users
+                    </h3>
+                    <div class="project-tags">
+                        <span class="tag">Capstone Project</span>
+                        <span class="tag">IEEE ICCCR '24</span>
+                    </div>
+                    <p>Interested in how we're redefining accessibility for the elderly? Dive into our award-winning capstone project, featured at IEEE ICCCR '24, where we developed adaptive UI/UX frameworks for essential applications, attuned to the cognitive patterns of geriatric users.</p>
+                    <a href="https://drive.google.com/file/d/1SGydqCOt9oyL0IGUd5nmVcHBb7XSIXUF/view?usp=sharing" target="_blank" class="view-project-link">View Project →</a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-info">
+                    <h3 class="project-title">
+                        Drut Pals
+                    </h3>
+                    <div class="project-tags">
+                        <span class="tag">Hackathon</span>
+                        <span class="tag">HCI</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
+                    <p><!-- Project description --></p>
+                    <a href="https://drive.google.com/file/d/1xkXPiqs5zH3lNam2iqB-mpAy9w17ozWO/view?usp=sharing" target="_blank" class="view-project-link">View Project →</a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-info">
+                    <h3 class="project-title">
+                        Habba
+                    </h3>
+                    <div class="project-tags">
+                        <span class="tag">Hackathon</span>
+                        <span class="tag">HCI</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
+                    <p><!-- Project description --></p>
+                    <a href="https://drive.google.com/file/d/1xkXPiqs5zH3lNam2iqB-mpAy9w17ozWO/view?usp=sharing" target="_blank" class="view-project-link">View Project →</a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-info">
+                    <h3 class="project-title">
+                        Sustainability Landscape in India
+                    </h3>
+                    <div class="project-tags">
+                        <span class="tag">Hackathon</span>
+                        <span class="tag">HCI</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
+                    <p><!-- Project description --></p>
+                    <a href="https://drive.google.com/file/d/1xkXPiqs5zH3lNam2iqB-mpAy9w17ozWO/view?usp=sharing" target="_blank" class="view-project-link">View Project →</a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-info">
+                    <h3 class="project-title">
+                        Brand Collaterals
+                    </h3>
+                    <div class="project-tags">
+                        <span class="tag">Hackathon</span>
+                        <span class="tag">HCI</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
+                    <p><!-- Project description --></p>
+                    <a href="https://drive.google.com/file/d/1xkXPiqs5zH3lNam2iqB-mpAy9w17ozWO/view?usp=sharing" target="_blank" class="view-project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section id="social-service">
+            <h2>Social Service</h2>
+            <!-- Placeholder for social service experiences -->
+            <div class="social-service-item">
+                <h3>Volunteer Work Title</h3>
+                <p><!-- Description of the volunteer work --></p>
+            </div>
+            <!-- Repeat for other experiences -->
+        </section>
+
+        <section id="contact">
+            <div class="left">
+                <h2>Contact Me</h2>
+                <form id="contact-form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="right">
+                <h2>More About Me</h2>
+                <!-- Placeholder for LinkedIn stories, gallery, awards, and recognitions -->
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn Stories</a>
+                <a href="your-gallery-link.com" target="_blank">Gallery</a>
+                <a href="your-awards-link.com" target="_blank">Awards and Recognition</a>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

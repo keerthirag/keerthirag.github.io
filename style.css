@@ -1,0 +1,428 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f0ec; /* Apply the background color to the entire page */
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace; /* Assuming you want the whole page in this font */
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 2em; /* Adjust sizes for different heading levels as needed */
+}
+
+/* Header styles */
+header {
+    background-color: #000; /* Full black background */
+    color: #fff; /* White text color for contrast */
+    padding: 10px 20px; /* Example padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img#logo {
+    max-height: 50px;
+}
+
+/* Accessibility Controls styles */
+#accessibility-menu {
+    position: relative;
+    display: inline-block;
+}
+
+#accessibility-controls {
+    position: absolute;
+    right: 0;
+    background-color: #BA0021; /* Celtic FC Green, like the button */
+    border: 1px solid #fff; /* Border color to match the background */
+    z-index: 1;
+    display: block; /* Hidden by default */
+    overflow: hidden;
+    max-height: 0; /* Used for the roll-down effect */
+    transition: max-height 0.5s ease-in-out; /* Smooth transition for the dropdown */
+    width: 200px; /* Adjust width as needed */
+    border-radius: 6px; /* Rounded corners */
+}
+
+#accessibility-controls button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #BA0021; /* Celtic FC Green, like the button */
+    color: #fff; /* Text color white */
+    text-align: center;
+    box-shadow: none;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    border-bottom: 1px solid #fff; /* Optional: adds a divider between dropdown items */
+}
+
+#accessibility-controls button:last-child {
+    border-bottom: none; /* Remove border from the last button */
+}
+
+#accessibility-controls button:hover {
+    background-color: #BA0021; /* Slightly darker green for hover state */
+}
+
+/* Accessibility button styles */
+#accessibility-btn {
+    appearance: none;
+    background-color: #BA0021;
+    border: 1px solid #BA0021;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    padding: 12px 40px 12px 25px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    transition: transform 0.1s, box-shadow 0.1s; /* Smooth transition for active state */
+}
+
+#accessibility-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Position the arrow to the right of the text */
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff; /* Arrow pointing down */
+    transform: translateY(-50%);
+}
+
+#accessibility-btn.open::after {
+    border-top: none;
+    border-bottom: 5px solid #fff; /* Arrow pointing up when dropdown is open */
+}
+
+#accessibility-btn:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+}
+
+#accessibility-btn, #accessibility-controls {
+    width: 200px; /* Set a fixed width or adjust as needed */
+}
+
+@media (min-width: 768px) {
+    #accessibility-btn {
+        width: 250px; /* Adjust if you have a different width for larger screens */
+    }
+    #accessibility-controls {
+        width: 248px; /* Adjust to be narrower than the button on larger screens */
+    }
+}
+
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.left, .right {
+    padding: 10px;
+}
+
+/* Introduction styles */
+#introduction {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding: 25px;
+  }
+  
+  .left {
+    max-width: 50%;
+  }
+  
+  #about-me h1 {
+    font-size: 4em; /* Large font for the name */
+    margin-bottom: 0.5em;
+  }
+  
+  .left p {
+    font-size: 2em; /* Large font for the mission statement */
+    margin: 0.5em; /* Adjusted spacing */
+  }
+  
+  .highlight {
+    text-decoration: underline;
+    color: #000; /* Cadet blue for the underlined words */
+  }
+  
+  .right {
+    text-align: center; /* Center-align the content in the right section */
+  }
+  
+  .right img.profile-image {
+    /* Styles for the profile image */
+    width: 500px; /* Adjust to desired width */
+    height: 650px; /* Adjust to desired height */
+    object-fit: cover; /* This will prevent the image from stretching */
+    margin: 20px auto; /* Center the image and add space */
+  }
+  
+/* Shared styles for both icons */
+.contact-link img {
+    margin: 0 10px; /* Space between the icons */
+  }
+  
+  /* Specific styles for LinkedIn icon */
+  .contact-linkedin img {
+    width: 50px; /* Width for the LinkedIn icon */
+    height: 50px; /* Height for the LinkedIn icon */
+  }
+  
+  /* Specific styles for Email icon */
+  .contact-email img {
+    width: 50px; /* Width for the Email icon */
+    height: 50px; /* Height for the Email icon */
+  }
+  
+  /* Center-align the contact links container */
+  .contact-links {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Align the icons vertically */
+    margin: 0 auto; /* Center-align the contact-links div itself */
+  }
+  
+  /* Styles for the resume button */
+  .resume-button {
+    appearance: none;
+    background-color: #BA0021;
+    border: 1px solid #BA0021;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 12px 70px;
+    text-align: center;
+    white-space: nowrap;
+    transition: transform 0.1s, box-shadow 0.1s; /* Smooth transition for active state */
+    margin: 20px auto; /* Center the button horizontally */
+    display: block; /* Change display to block to allow margin auto to work */
+  }
+
+/* Experience and education styles */
+#experience .left, #experience .right {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 15px;
+}
+
+/* Projects styles */
+#projects .project-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#projects .project-item img {
+    max-width: 150px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.project-info {
+    flex-grow: 1;
+}
+
+/* Social service styles */
+.social-service-item {
+    margin-bottom: 15px;
+}
+
+/* Contact form styles */
+#contact .left {
+    width: 60%;
+    float: left;
+}
+
+#contact .right {
+    width: 40%;
+    float: right;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #BA0021;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #BA0021;
+}
+
+/* Styles for the black strip */
+.black-strip {
+    background-color: #000; /* Full black background */
+    color: #fff; /* White text color */
+    margin-left: -132px; /* Negative margin equal to the main's padding */
+    margin-right: -132px; /* Negative margin equal to the main's padding */
+    padding: 10px 0; /* Vertical padding similar to header */
+    text-align: center; /* Center-align the title */
+}
+
+/* About Me content styles */
+.about-me-content {
+    padding: 0 20px; /* Padding for readability, match the main's padding */
+    margin: 20px auto; /* Margin for top and bottom spacing, centered horizontally */
+    max-width: 1200px; /* Match the max-width of the main content */
+    font-size: 1.2em;
+}
+
+/* Styles for special links */
+.special-link {
+    color: #BA0021; /* Red color for hyperlinks */
+    text-decoration: none; /* No underline by default */
+}
+
+.special-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.black-strip {
+    background-color: #000; /* Full black background */
+    color: #fff; /* White text color */
+    margin-left: -132px; /* Negative margin equal to the main's padding */
+    margin-right: -132px; /* Negative margin equal to the main's padding */
+    padding: 10px 0; /* Vertical padding similar to header */
+    text-align: center; /* Center-align the title */
+}
+
+.projects-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allows project items to wrap into the next row */
+    justify-content: space-between; /* Spacing between project items */
+    gap: 20px; /* Additional spacing between project items if needed */
+}
+
+.project-item {
+    flex: 1 1 30%; /* Each item will take up roughly a third of the container width */
+    border: 2px solid #BA0021; /* Red border around project items */
+    border-radius: 15px; /* Rounded edges for project items */
+    padding: 20px; /* Padding inside project items */
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+    margin-bottom: 20px; /* Spacing between rows of projects */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: space-between; /* Align children with space between */
+    height: auto; /* Make height adjust based on content */
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Take full height of the parent */
+}
+
+.project-title {
+    color: #000; /* Red color for the project title */
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em; /* Adjust title font size as needed */
+    margin: 0 0 10px 0; /* Spacing below the project title */
+}
+
+.project-title span {
+    display: inline; /* Ensures that the spans are not altering the letter spacing */
+    margin: 0;       /* Removes any margins */
+    padding: 0;      /* Removes any padding */
+    /* Additional styles, if necessary */
+}
+
+.project-tags {
+    margin-bottom: 10px; /* Spacing below the project tags */
+}
+
+.tag {
+    background-color: #BA0021; /* Red background for tags */
+    color: #fff; /* White text color for tags */
+    border-radius: 15px; /* Rounded edges for tags */
+    padding: 5px 10px; /* Padding inside the tags */
+    margin-right: 5px; /* Spacing between tags */
+    display: inline-block; /* Align tags in line */
+    font-size: 0.8em; /* Smaller font size for tags */
+}
+
+.project-info p {
+    font-size: 1em; /* Adjust description font size as needed */
+    margin: 0 0 10px 0; /* Spacing below the project description */
+}
+
+.view-project-link {
+    color: #000; /* Black color for hyperlinks */
+    text-decoration: none; /* No underline by default */
+    font-weight: bold; /* Make the link bold */
+    transition: color 0.3s; /* Smooth transition for color change */
+    margin-top: auto;
+}
+
+.view-project-link:hover {
+    color: #BA0021; /* Red color when hovered */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Google logo colors */
+.google-logo-red { color: #DB4437; }    /* Red */
+.google-logo-yellow { color: #F4B400; } /* Yellow */
+.google-logo-green { color: #0F9D58; }  /* Green */
+.google-logo-blue { color: #4285F4; }   /* Blue */
+
+.highlightt {
+    color: #ff8800; /* Example color - replace with your choice */
+}
