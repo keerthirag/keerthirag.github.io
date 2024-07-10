@@ -447,3 +447,65 @@ section {
 .footer-content span {
     font-weight: bold; /* Makes the name or company name bold */
 }
+
+/* Right Arrow Styles */
+.arrow-right {
+    font-size: 25px; /* Adjust size as needed */
+    margin-top: 5px;
+}
+
+/* CO2 Info Circle Button Styles */
+.co2-info-circle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1000; /* High z-index to ensure it's above other content */
+    text-align: center;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Fullscreen CO2 Info Overlay Styles */
+.co2-info-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 999; /* Slightly lower z-index than the button */
+    overflow: auto; /* Enable scrolling for overlay content */
+    transition: all 0.5s ease-in-out; /* Smooth transition for all properties */
+}
+
+.co2-info-content {
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    font-size: 18px; /* Larger font size for content */
+}
+
+.close-overlay {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 40px; /* Larger font size for close button */
+    line-height: 40px;
+}
