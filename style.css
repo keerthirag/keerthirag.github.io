@@ -483,10 +483,10 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000;
     z-index: 999; /* Slightly lower z-index than the button */
     overflow: auto; /* Enable scrolling for overlay content */
     transition: all 0.5s ease-in-out; /* Smooth transition for all properties */
+    background-color: #000;
 }
 
 .co2-info-content {
