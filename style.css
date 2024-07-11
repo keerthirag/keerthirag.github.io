@@ -180,8 +180,8 @@ section {
   
   .right img.profile-image {
     /* Styles for the profile image */
-    width: 500px; /* Adjust to desired width */
-    height: 650px; /* Adjust to desired height */
+    width: 400px; /* Adjust to desired width */
+    height: 550px; /* Adjust to desired height */
     object-fit: cover; /* This will prevent the image from stretching */
     margin: 20px auto; /* Center the image and add space */
   }
