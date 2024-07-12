@@ -236,44 +236,56 @@ section {
     display: block; /* Change display to block to allow margin auto to work */
   }
 
-  @media (max-width: 768px) {
-    #introduction {
-      flex-direction: column;
-      text-align: center;
-    }
-    
-    .left, .right {
-      max-width: 100%;
-      padding: 10px;
-    }
-    
-    .left {
-      order: 2; /* Render text below the image */
-    }
-    
-    .right {
-      order: 1; /* Render image above the text */
-    }
-    
-    #about-me h1, .left p {
-      font-size: 1.5em; /* Adjusted font size for smaller screens */
-    }
-    
-    .resume-button {
-      padding: 12px 50px; /* Adjusted padding for the button */
-    }
+@media (max-width: 768px) {
+  #introduction {
+    flex-direction: column;
+    align-items: center; /* Center align the flex items */
   }
   
-  /* Media query for smaller devices like phones */
-  @media (max-width: 480px) {
-    #about-me h1, .left p {
-      font-size: 1.2em; /* Smaller font size for very small screens */
-    }
-    
-    .resume-button {
-      padding: 8px 20px; /* Smaller padding for the button */
-    }
+  .left, .right {
+    max-width: 100%;
+    padding: 10px;
   }
+
+  .left {
+    order: 2; /* Render text below the image */
+  }
+  
+  .right {
+    order: 1; /* Render image above the text */
+  }
+  
+  .right img.profile-image {
+    width: auto; /* Allow the image to scale based on its height */
+    max-width: 100%; /* Ensure image is not wider than its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  #about-me h1, .left p {
+    font-size: 1.5em; /* Adjusted font size for smaller screens */
+  }
+  
+  .resume-button {
+    padding: 12px 50px; /* Adjusted padding for the button */
+  }
+}
+
+/* Media query for smaller devices like phones */
+@media (max-width: 480px) {
+  #about-me h1, .left p {
+    font-size: 1.2em; /* Further reduced font size for very small screens */
+  }
+  
+  .resume-button {
+    padding: 8px 20px; /* Reduced padding for the button */
+    font-size: 1em; /* Adjust button font size if necessary */
+  }
+  
+  .right img.profile-image {
+    max-width: 90%; /* Allow some margin on the sides */
+    margin: 0 auto; /* Center the image */
+  }
+}
 
 /* Experience and education styles */
 #experience .left, #experience .right {
