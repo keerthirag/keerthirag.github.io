@@ -124,7 +124,7 @@ header img#logo {
 
 @media (min-width: 768px) {
     #accessibility-btn {
-        width: 250px; /* Adjust if you have a different width for larger screens */
+        width: 450px; /* Adjust if you have a different width for larger screens */
     }
     #accessibility-controls {
         width: 248px; /* Adjust to be narrower than the button on larger screens */
