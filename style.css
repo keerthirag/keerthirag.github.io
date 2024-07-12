@@ -400,7 +400,7 @@ section {
 }
 
 .project-info p {
-    font-size: 1em; /* Adjust description font size as needed */
+    font-size: 1.05em; /* Adjust description font size as needed */
 }
 
 .view-project-link {
