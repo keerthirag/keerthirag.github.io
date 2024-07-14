@@ -102,8 +102,8 @@ function closeCO2Info() {
     // Shrink the overlay back into the button with new size
     co2Button.style.display = 'flex';
     co2Button.style.borderRadius = '50%'; // Back to circle shape
-    co2Button.style.width = '130px'; // New width (or adjust as needed)
-    co2Button.style.height = '130px'; // New height (or adjust as needed)
+    co2Button.style.width = '140px'; // New width (or adjust as needed)
+    co2Button.style.height = '140px'; // New height (or adjust as needed)
     co2Button.style.bottom = '20px'; // Original position from the bottom
     co2Button.style.right = '20px'; // Original position from the right
     co2Button.style.paddingTop = '0'; // Remove vertical centering
