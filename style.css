@@ -360,14 +360,19 @@ section {
     background-color: #BA0021;
 }
 
-/* Styles for the black strip */
 .black-strip {
     background-color: #000; /* Full black background */
     color: #fff; /* White text color */
-    margin-left: -132px; /* Negative margin equal to the main's padding */
-    margin-right: -132px; /* Negative margin equal to the main's padding */
-    padding: 10px 0; /* Vertical padding similar to header */
     text-align: center; /* Center-align the title */
+}
+
+/* Add a new class for the content inside the black strip to match header and footer */
+.black-strip-content {
+    width: auto; /* Take the full available width */
+    max-width: 1200px; /* Max width to match header and footer, adjust as needed */
+    margin: 0 auto; /* Center the content */
+    padding: 10px 15px; /* Add padding, adjust to match header and footer */
+    box-sizing: border-box; /* Include padding in the width calculation */
 }
 
 /* About Me content styles */
