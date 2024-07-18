@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
     background-color: #000; /* Full black background */
     color: #fff; /* White text color for contrast */
-    padding: 10px 20px; /* Example padding */
+    padding: 10px 15px; /* Example padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
