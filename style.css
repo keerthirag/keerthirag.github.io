@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2em; /* Adjust sizes for different heading levels as needed */
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 /* Header styles */
 header {
     background-color: #000; /* Full black background */
@@ -360,19 +364,29 @@ section {
     background-color: #BA0021;
 }
 
+/* Ensure full width and no horizontal overflow */
 .black-strip {
     background-color: #000; /* Full black background */
     color: #fff; /* White text color */
     text-align: center; /* Center-align the title */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Add a new class for the content inside the black strip to match header and footer */
+/* Consistent styling for the content inside the black strip */
 .black-strip-content {
-    width: auto; /* Take the full available width */
-    max-width: 1200px; /* Max width to match header and footer, adjust as needed */
     margin: 0 auto; /* Center the content */
     padding: 10px 15px; /* Add padding, adjust to match header and footer */
-    box-sizing: border-box; /* Include padding in the width calculation */
+    max-width: 1200px; /* Max width to match header and footer, adjust as needed */
+}
+
+@media (max-width: 768px) {
+    .black-strip-content {
+        padding: 10px; /* Adjust padding for smaller screens if needed */
+    }
+}
+
+body, html {
+    overflow-x: hidden;
 }
 
 /* About Me content styles */
